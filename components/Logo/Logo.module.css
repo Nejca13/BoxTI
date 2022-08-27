@@ -1,0 +1,41 @@
+.logoContainer {
+  position: relative;
+}
+
+.border1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 8px;
+  border-style: dashed;
+  border-color: #0f93be;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  animation: circle 60s linear infinite;
+  position: relative;
+  z-index: 100;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(0px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) rotate(360deg);
+  }
+}
+
+.logoContainer p {
+  margin: 0;
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logoContainer p span {
+  color: #3d788d;
+}

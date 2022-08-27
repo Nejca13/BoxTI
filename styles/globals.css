@@ -25,6 +25,11 @@
   --form-label-font-weight: var(--font-weight);
   --transition: 0.2s ease-in-out;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 576px) {
   :root {
     --font-size: 17px;
@@ -2252,7 +2257,7 @@ textarea {
     animation-delay: -1ms !important;
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
+    scroll-behavior: smooth !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
   }

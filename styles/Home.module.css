@@ -1,9 +1,28 @@
+
+.container{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.container section{
+    padding-top: 30px;
+    scroll-snap-align: start;
+}
+
 .mainHero{
     background-image: url('../assets/images/Bg2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
 }
 
 .mainHero h1{
@@ -23,38 +42,63 @@
     width: 50%;
     border-radius: 5px;
     position: absolute;
-    right: 30px;
-    bottom: 40px;
+    bottom: 140px;
+    padding: 20px;
     text-align: center;
     text-shadow: 2px 3px 10px black;
 }
 
-.container h2{
+.preDescription p{
     margin: 0;
+}
+
+.moreInfo{
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.60);
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 100%;
 }
 
 .about{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    background-color: #11191f;
+    min-height: 100vh;
+    background-image: url('../assets/images/aboutBgsvg.svg');
+    background-position: 10px 100px;
+    background-size: 700px;
+
 }
 
-.about h2{
+.container h2{
     margin: 40px 0;
     text-shadow: 2px 3px 10px black;
     font-size: 50px;
 }
 
 .aboutDescription{
-    background-color: rgba(0, 0, 0, 0.60);
-    width: 70%;
+    background-color: #0000009c;
+    width: 40%;
+    position: absolute;
+    right: 100px;
     border-radius: 5px;
     text-align: center;
-    margin: 40px 0;
+    margin: 200px 0;
 }
 
 .aboutDescription p{
     margin: 20px;
+}
+
+.service{
+    background-color: #000000a2;
+    min-height: 100vh;
+    padding: 0 50px;
 }
 
 .aboutCardContainer{
@@ -62,7 +106,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 60px 0;
+    margin-top: 60px;
     flex-wrap: wrap;
 }
 
@@ -111,6 +155,37 @@
    
    .card:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    cursor: pointer;
    }
 
    /* End */ 
+
+   @media (max-width: 576px) {
+    .container h2{
+        margin: 20px 0;
+    }
+
+    .container section{
+        padding: 0;
+    }
+
+    .mainHero h1{
+        padding: 0;
+    }
+    .preDescription{
+        width: 90%;
+        bottom: 85px;
+    }
+
+    .about{
+        background-size: 100%;
+        background-position: 0 75px;
+    }
+
+    .aboutDescription{
+        width: 90%;
+        right: auto;
+        bottom: 30px;
+        margin: 0;
+    }
+   }

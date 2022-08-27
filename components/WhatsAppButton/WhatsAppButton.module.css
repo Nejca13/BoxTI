@@ -1,0 +1,48 @@
+/* From uiverse.io by @adamgiebl */
+.container a {
+    font-family: inherit;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: all 0.2s;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+   }
+   
+   .container a svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+    width: 30px;
+   }
+   
+   .container a:hover{
+    animation: fly-1 0.7s ease-in-out infinite alternate;
+   }
+   
+   .container a:hover svg {
+    transform: scale(1.1);
+   }
+   
+   .container a:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   
+   
