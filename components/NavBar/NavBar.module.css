@@ -16,3 +16,17 @@
 .container ul li {
   list-style: none;
 }
+
+.conte .nav{
+  justify-content: space-around;
+}
+
+.conte .navLink{
+  padding: 0 ;
+  margin: 0 10px;
+  color: #0f93be;
+}
+
+.conte button{
+  width: auto;
+}

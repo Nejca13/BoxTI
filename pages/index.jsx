@@ -1,4 +1,7 @@
 import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
   faTelegramPlane,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons"
@@ -12,21 +15,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Head from "next/head"
 import WhatsAppButton from "../components/WhatsAppButton/WhatsAppButton"
 import styles from "../styles/Home.module.css"
+import NavBar from "../components/NavBar/NavBar"
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="_1">
       <Head>
-        <title>BoxIT | Home</title>
+        <title>Nejca | Home</title>
       </Head>
+      <NavBar/>
       <section className={styles.mainHero} id="hero">
         <h1>
-          Box<span className={styles.it}>IT</span> | Servicios Informaticos
+          Nej<span className={styles.it}>ca</span> | Servicios Informaticos
         </h1>
         <div className={styles.preDescription}>
           <p>
             Servicios Informaticos, para pequeñas y grandes empresas
           </p>
+          
+          <button><a className={styles.btnHablanos} href="https://wa.me/+542984406895" target="_blank">Hablanos</a></button>
         </div>
         <a href="#about">
           <FontAwesomeIcon
@@ -37,11 +44,11 @@ export default function Home() {
       </section>
       <section className={styles.about} id="about">
         <h2>
-          Que es Box<span className={styles.it}>IT</span>?
+          Que es Nej<span className={styles.it}>ca</span>?
         </h2>
         <div className={styles.aboutDescription}>
           <p>
-            Box<span className={styles.it}>IT</span> ofrece servicios
+            Nej<span className={styles.it}>ca</span> ofrece servicios
             informaticos y web, que abarca tanto la creacion como el
             mantenimiento de sitios web. Y el armado, reparacion y mantenimiento
             de PC, Notebook, Consolas de video juegos.
@@ -58,7 +65,7 @@ export default function Home() {
             <div className={styles.aboutCard}>
               <FontAwesomeIcon className={styles.icon} icon={faGlobe} />
               <p>
-                <strong>Creacion de paginas web</strong>
+                <strong>Desarrollo web</strong>
               </p>
               <p>
                 Creacion y mantenimiento de sitios web desarrollados a medida de
@@ -92,6 +99,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+      <div className={styles.webDesign}>
+          
+          </div>
+          <div className={styles.pcFix}>
+            
+          </div>
+          <div className={styles.console}>
+            
+          </div>
+      </section>
+      <footer id="contact">
+        <ul>
+          <h4>Nejca</h4>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Que es Nejca?</a></li>
+          <li><a href="#service">Servicios</a></li>
+        </ul>
+        <ul>
+          <h4>Contacto</h4>
+          <li>conctacto@nejca.com</li>
+          <li>Tel: +542984406895</li>
+        </ul>
+        <ul>
+          <h4>Redes</h4>
+          <li><a href=""><FontAwesomeIcon className={styles.iconFooter} icon={faFacebook}/></a></li>
+          <li><a href=""><FontAwesomeIcon className={styles.iconFooter} icon={faLinkedin}/></a></li>
+          <li><a href=""><FontAwesomeIcon className={styles.iconFooter} icon={faInstagram}/></a></li>
+        </ul>
+      </footer>
+      <p className={styles.copy}>&#169; 2022 Nejca</p>
       <WhatsAppButton
         icon={faWhatsapp}
         bgColor="#00bb2d"
@@ -110,7 +148,7 @@ export default function Home() {
         icon={faArrowAltCircleUp}
         bottom="135px"
         bgColor="rgba(0,0,0, 0.6)"
-        href="#hero"
+        href="#_1"
         target=""
       />
     </div>

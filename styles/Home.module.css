@@ -1,191 +1,260 @@
-
-.container{
-    text-align: center;
-    position: relative;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+.container {
+  position: relative;
+  text-align: center;
 }
-.container section{
-    padding-top: 30px;
-    scroll-snap-align: start;
+.container section {
+  margin: 0;
 }
 
-.mainHero{
-    background-image: url('../assets/images/Bg2.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
+.mainHero {
+  background-image: url("../assets/images/Bg2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.mainHero h1 {
+  text-align: center;
+  text-shadow: 2px 3px 10px black;
+  font-size: 70px;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.it {
+  color: #3d788d;
+}
+
+.preDescription {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 140px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 2px 3px 10px black;
+}
+
+.preDescription button{
+    width: 300px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
 }
 
-.mainHero h1{
-    text-align: center;
-    text-shadow: 2px 3px 10px black;
-    font-size: 70px;
-    padding: 50px 0 0 0;
-    margin: 0;
+.preDescription a{
+    color: #fff;
+    text-decoration: none;
 }
 
-.it{
-    color: #3d788d;
+.preDescription p {
+  margin: 0 0 15px 0;
 }
 
-.preDescription{
-    background-color: rgba(0, 0, 0, 0.60);
-    width: 50%;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 140px;
-    padding: 20px;
-    text-align: center;
-    text-shadow: 2px 3px 10px black;
+.moreInfo {
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 100%;
 }
 
-.preDescription p{
-    margin: 0;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #11191f;
+  min-height: 100vh;
+  background-image: url("../assets/images/aboutBgsvg.svg");
+  background-position: 10px 100px;
+  background-size: 700px;
 }
 
-.moreInfo{
-    width: 60px;
-    background-color: rgba(0, 0, 0, 0.60);
-    position: absolute;
-    bottom: 20px;
-    transform: translateX(-50%);
-    padding: 10px;
-    border-radius: 100%;
+.container h2 {
+  margin: 40px 0;
+  text-shadow: 2px 3px 10px black;
+  font-size: 50px;
 }
 
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    background-color: #11191f;
-    min-height: 100vh;
-    background-image: url('../assets/images/aboutBgsvg.svg');
-    background-position: 10px 100px;
-    background-size: 700px;
-
+.aboutDescription {
+  background-color: #0000009c;
+  width: 40%;
+  position: absolute;
+  right: 100px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 200px 0;
 }
 
-.container h2{
-    margin: 40px 0;
-    text-shadow: 2px 3px 10px black;
-    font-size: 50px;
+.aboutDescription p {
+  margin: 20px;
 }
 
-.aboutDescription{
-    background-color: #0000009c;
-    width: 40%;
-    position: absolute;
-    right: 100px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 200px 0;
+.service {
+  background-color: #000000a2;
+  min-height: 100vh;
+  padding: 0;
 }
 
-.aboutDescription p{
-    margin: 20px;
+.aboutCardContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+  flex-wrap: wrap;
 }
 
-.service{
-    background-color: #000000a2;
-    min-height: 100vh;
-    padding: 0 50px;
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 360px;
+  max-height: 350px;
 }
 
-.aboutCardContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-top: 60px;
-    flex-wrap: wrap;
+.aboutCard p {
+  max-width: 350px;
 }
 
-.aboutCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.70);
-    border-radius: 5px;
-    padding: 15px;
-    max-width: 360px;
-    max-height: 350px;
-}
-
-.aboutCard p{
-    max-width: 350px;
-}
-
-.icon{
-    width: 70px;
-    color: #76b4ca;
-    margin-bottom: 20px;
+.icon {
+  width: 70px;
+  color: #76b4ca;
+  margin-bottom: 20px;
 }
 
 /* Card UIVERSE */
 
 .card {
-    
-    background-image: linear-gradient(163deg, #76b4ca 0%, #2017a0 100%);
-    border-radius: 20px;
-    transition: all .3s;
-    margin: 20px;
-   }
-   
-   .aboutCard {
-    border-radius: 20px;
-    transition: all .2s;
-   }
-   
-   .aboutCard:hover {
-    transform: scale(0.99);
-    border-radius: 20px;
-   }
-   
-   .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-    cursor: pointer;
-   }
+  background-image: linear-gradient(163deg, #76b4ca 0%, #2017a0 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin: 20px;
+}
 
-   /* End */ 
+.aboutCard {
+  border-radius: 20px;
+  transition: all 0.2s;
+}
 
-   @media (max-width: 576px) {
-    .container h2{
-        margin: 20px 0;
-    }
+.aboutCard:hover {
+  transform: scale(0.99);
+  border-radius: 20px;
+}
 
-    .container section{
-        padding: 0;
-    }
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  cursor: pointer;
+}
 
-    .mainHero h1{
-        padding: 0;
-    }
-    .preDescription{
-        width: 90%;
-        bottom: 85px;
-    }
+/* End */
 
-    .about{
-        background-size: 100%;
-        background-position: 0 75px;
-    }
+.container footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
 
-    .aboutDescription{
-        width: 90%;
-        right: auto;
-        bottom: 30px;
-        margin: 0;
-    }
-   }
+.container h4 {
+  margin: 20px 0;
+}
+
+.container footer ul li {
+  list-style: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.container footer ul li a {
+  color: #c8d1c8;
+  text-decoration: none;
+}
+
+.container footer ul li a:hover {
+  color: #3d788d;
+}
+
+.container footer .iconFooter {
+  width: 30px;
+}
+
+.container .copy {
+  margin: 0;
+  font-size: 16px;
+}
+
+.webDesign{
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/webDesign.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.pcFix{
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/pcRepair.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.console{
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/PSRepair.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 576px) {
+  .container h2 {
+    margin: 20px 0;
+  }
+
+  .container section {
+    padding: 0;
+  }
+
+  .mainHero h1 {
+    padding: 0;
+  }
+  .preDescription {
+    width: 90%;
+    bottom: 85px;
+  }
+
+  .about {
+    background-size: 100%;
+    background-position: 0 75px;
+  }
+
+  .aboutDescription {
+    width: 90%;
+    right: auto;
+    bottom: 30px;
+    margin: 0;
+  }
+}
