@@ -33,7 +33,7 @@ export default function Home() {
             Servicios Informaticos, para pequeñas y grandes empresas
           </p>
           
-          <button><a className={styles.btnHablanos} href="https://wa.me/+542984406895" target="_blank">Hablanos</a></button>
+          <button><a className={styles.btnHablanos} href="https://wa.me/+542984406895" target="_blank" rel="noopener">Hablanos</a></button>
         </div>
         <a href="#about">
           <FontAwesomeIcon
