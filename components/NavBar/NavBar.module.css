@@ -31,6 +31,10 @@
   width: auto;
 }
 
+.hambMenu{
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .mobileNav {
     background: rgba(0, 0, 0, 0.39);
@@ -73,8 +77,9 @@
     position: absolute;
     z-index: 100;
     width: 35px;
-    right: 10px;
+    right: 15px;
     cursor: pointer;
+    visibility: visible;
   }
   
 }
