@@ -14,6 +14,7 @@
     height: 50px;
     position: fixed;
     right: 20px;
+    box-shadow: 2px 2px 10px black;
    }
    
    .container a svg {
@@ -42,6 +43,13 @@
    
     to {
      transform: translateY(-0.1em);
+    }
+   }
+
+   @media (max-width: 576px) {
+    .container a{
+        margin-bottom: 360px;
+        right: 5px;
     }
    }
    
