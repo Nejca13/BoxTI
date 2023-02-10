@@ -46,14 +46,14 @@
   text-shadow: 2px 3px 10px black;
 }
 
-.preDescription button{
-    width: 300px;
-    margin: 0;
+.preDescription button {
+  width: 300px;
+  margin: 0;
 }
 
-.preDescription a{
-    color: #fff;
-    text-decoration: none;
+.preDescription a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .preDescription p {
@@ -100,12 +100,13 @@
 
 .aboutDescription p {
   margin: 20px;
+  font-size: 18px;
 }
 
 .service {
   background-color: #000000a2;
   min-height: 100vh;
-  padding: 0;
+  padding-top: 1px;
 }
 
 .aboutCardContainer {
@@ -202,34 +203,34 @@
   font-size: 16px;
 }
 
-.webDesign{
-    padding:0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../assets/images/webDesign.jpg');
-    background-size: cover;
-    background-position: center;
+.webDesign {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/webDesign.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.pcFix{
-    padding:0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../assets/images/pcRepair.jpg');
-    background-size: cover;
-    background-position: center;
+.pcFix {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/pcRepair.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.console{
-    padding:0;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../assets/images/PSRepair.jpeg');
-    background-size: cover;
-    background-position: center;
+.console {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/images/PSRepair.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .container h2 {
     margin: 20px 0;
   }
@@ -240,6 +241,8 @@
 
   .mainHero h1 {
     padding: 0;
+    font-size: 60px;
+    margin-top: 60px;
   }
   .preDescription {
     width: 90%;
@@ -248,13 +251,18 @@
 
   .about {
     background-size: 100%;
-    background-position: 0 75px;
+    background-position: 0 150px;
+    max-width: 100vh;
   }
 
   .aboutDescription {
     width: 90%;
     right: auto;
-    bottom: 30px;
+    bottom: 60px;
     margin: 0;
+  }
+
+  .aboutDescription p {
+    font-size: 18px;
   }
 }
